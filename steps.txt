@@ -1,0 +1,16 @@
+1 - Creating a Django  Project & Setup 
+2 - Project & App Setup 
+3 - Custome User Setup  
+    (i)  Create a manager for this customer model  
+        - One thing we have to consider while creating a manager is that 
+          for both case  we only have to select BaseUserManager
+    (ii) Create a model based on that manager
+       - While creating a customer model we must select  a AbstractUser 
+         because this will provide additional feature so we can add fields without changing from scratch 
+
+4 - Update On Settings File as Well 
+    AUTH_USER_MODEL = "users.CustomUser"
+
+5 - python manage.py makemigrations 
+  - python manage.py migrate
+ 
